@@ -1,0 +1,42 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Xylophone Container */
+.xylophone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+/* Key Styles */
+.key {
+    flex: 1;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    background-color: #333;
+    transition: transform 0.1s;
+}
+
+.key:nth-child(1) { background-color: #ff4d4d; }
+.key:nth-child(2) { background-color: #ff8c1a; }
+.key:nth-child(3) { background-color: #ffd11a; }
+.key:nth-child(4) { background-color: #33cc33; }
+.key:nth-child(5) { background-color: #1a75ff; }
+.key:nth-child(6) { background-color: #9933ff; }
+.key:nth-child(7) { background-color: #ff66cc; }
+
+.key:hover {
+    transform: scale(1.05);
+}
